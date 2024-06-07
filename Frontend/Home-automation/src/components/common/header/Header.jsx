@@ -2,6 +2,9 @@ import React, { useState } from "react"
 import "./header.css"
 import { nav } from "../../data/Data"
 import { Link } from "react-router-dom"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faXmark, faBars } from '@fortawesome/free-solid-svg-icons'
+
 
 const Header = () => {
   const [navList, setNavList] = useState(false)
@@ -34,7 +37,7 @@ const Header = () => {
           </div>
 
           <div className='toggle'>
-            <button onClick={() => setNavList(!navList)}>{navList ? <i className='fa fa-times'></i> : <i className='fa fa-bars'></i>}</button>
+            <button onClick={() => setNavList(!navList)}>{navList ? <FontAwesomeIcon icon={faXmark}/> : <FontAwesomeIcon icon={faBars}/>}</button>
           </div>
         </div>
       </header>

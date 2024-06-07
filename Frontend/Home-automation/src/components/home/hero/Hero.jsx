@@ -1,5 +1,7 @@
 import React from "react"
 import Heading from "../../common/Heading"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import "./hero.css"
 
 const Hero = () => {
@@ -19,14 +21,10 @@ const Hero = () => {
               <input type='text' placeholder='Area of usage' />
             </div>
             <div className='box'>
-              <span>Price Range</span>
-              <input type='text' placeholder='Price' />
-            </div>
-            <div className='box'>
               <h4>Advance Filter</h4>
             </div>
             <button className='btn1'>
-              <i className='fa fa-search'></i>
+            <FontAwesomeIcon icon={faSearch} />
             </button>
           </form>
         </div>
