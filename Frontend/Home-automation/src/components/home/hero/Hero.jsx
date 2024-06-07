@@ -9,9 +9,9 @@ const Hero = () => {
     <>
       <section className='hero'>
         <div className='container'>
-          <Heading title='Search for a product ' subtitle='Find new devices'/>
-
+          <Heading title='Home Automation' h2='Control in your hands'/>
           <form className='flex'>
+          
             <div className='box'>
               <span>Our Devices</span>
               <input type='text' placeholder='Enter device name' />
