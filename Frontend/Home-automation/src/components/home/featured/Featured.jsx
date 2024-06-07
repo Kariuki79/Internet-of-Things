@@ -12,7 +12,7 @@ const Featured = () => {
     <>
       <section className='featured background'>
         <div className='container'>
-          <Heading title='Featured Devices'/>
+          <Heading title='What we deal with'/>
           <FeaturedCard />
         </div>
       </section>

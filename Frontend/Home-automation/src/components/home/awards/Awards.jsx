@@ -1,28 +1,31 @@
 import React from "react"
 import Heading from "../../common/Heading"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTrophy } from '@fortawesome/free-solid-svg-icons'
 
 import "./awards.css"
+
 
 const Awards = () => {
 
   const awards = [
     {
-      icon: <i class='fa-solid fa-trophy'></i>,
+      icon: <FontAwesomeIcon icon={faTrophy}  />,
       num: "32 M	",
       name: "United State Award",
     },
     {
-      icon: <i class='fa-solid fa-trophy'></i>,
+      icon: <FontAwesomeIcon icon={faTrophy}  />,
       num: "43 M",
       name: "kenya Award"
     },
     {
-      icon: <i class='fa-solid fa-lightbulb'></i>,
+      icon: <FontAwesomeIcon icon={faTrophy}  />,
       num: "51 M",
       name: "Europe Award"
     },
     {
-      icon: <i class='fa-solid fa-heart'></i>,
+      icon:  <FontAwesomeIcon icon={faTrophy}  />,
       num: "42 M",
       name: "United Kingdom Award",
     },
@@ -31,7 +34,7 @@ const Awards = () => {
     <>
       <section className='awards padding'>
         <div className='container'>
-          <Heading title='Over Millions+ Happy User Being With Us Still They Love Our Services' subtitle='Our Awards' />
+          <Heading title='Over Millions of Happy users love Our Services' subtitle='Our Awards' />
 
           <div className='content grid4 mtop'>
             {awards.map((val, index) => (

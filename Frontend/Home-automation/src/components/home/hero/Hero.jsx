@@ -24,7 +24,7 @@ const Hero = () => {
               <h4>Advance Filter</h4>
             </div>
             <button className='btn1'>
-            <FontAwesomeIcon icon={faSearch} />
+            <FontAwesomeIcon icon={faSearch}  />
             </button>
           </form>
         </div>
